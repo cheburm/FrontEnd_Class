@@ -1,0 +1,35 @@
+#wrap{width: 100%;}
+
+/*<!-- 상단 -->*/
+#header{
+    width: 100%;
+    height: 165px;
+    background-color: blueviolet;
+}
+
+#header_in{
+    margin: 0 auto;
+    width: 1200px;
+    height: 165px;
+    background-color: burlywood;
+}
+
+/*<!-- 메인이미지 -->*/
+#main_img{
+    width: 100%;
+    height: 805px;
+    background-color: chartreuse;
+}
+
+/*<!-- 컨텐츠 -->*/
+#contents{width: 100%;}
+
+#contents_in{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1600px;
+    background-color: darkkhaki;
+}
+
+/*<!-- 하단 -->*/
+#footer{}
