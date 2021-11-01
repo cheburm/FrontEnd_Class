@@ -4,21 +4,38 @@
 #header{
     width: 100%;
     height: 165px;
-    background-color: blueviolet;
 }
 
 #header_in{
     margin: 0 auto;
     width: 1200px;
     height: 165px;
-    background-color: burlywood;
 }
+
+#header_in .logo{width: 100%;
+                height: 100px;
+                font-size: 30px;
+                color: #444;
+                text-align:center;
+                line-height: 100px;}
+
+#header_in .nav {width: 100%; height: 65px;}
+
+#header_in .nav li {float: left; width: 171.4px;
+                    height: 65px; text-align: center;
+                    line-height: 65px;}
+
+#header_in .nav li a {font-size: 18px;
+                      font-weight: 700;}
 
 /*<!-- 메인이미지 -->*/
 #main_img{
     width: 100%;
     height: 805px;
-    background-color: chartreuse;
+    background-image: url(../images/visual.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* background: url(../images/visual.jpg)no-repeat 50% 0; */
 }
 
 /*<!-- 컨텐츠 -->*/
@@ -28,8 +45,49 @@
     margin: 0 auto;
     width: 1200px;
     height: 1600px;
-    background-color: darkkhaki;
 }
 
+.product{ float: left;
+    width: 600px; height: 670px;
+}
+
+.product h3{width: 595px; height: 70px;
+            font-size: 18px; font-weight: 500;
+            line-height: 70px; padding-left: 5px;}
+
+/* .product img{}
+.product .info_box{} */
+
+.product .info_box > h4{float: left; font-size: 40px;
+                        margin: 40px;}
+
+.product .info_box > .group{float: left; margin: 45px 0 0 20px;}
+/* 한줄에 한개 존재 두개이상일 경우는 문단그룹 묶어준다*/
+.product .info_box > p{font-size: 20px;}
+.product .info_box > span{font-size: 14px;}
+.product .info_box > a{float: right; font-size: 18px;
+                       margin: 55px 20px 0 0;}
+
+/* 리스트 박스 */
+.list_box{float: right; width: 545px;}
+.list_box > ul{ margin-top: 50px;}
+.list_box > ul > li{
+    border-bottom: 1px solid #ccc;
+    height: 160px;
+}
+.list_box li > h4{float: left; font-size: 40px; margin: 60px 0 0 20px;}
+.list_box li > img{float: left; margin: 25px 0 0 20px;}
+.list_box li > .group{float: left; margin: 60px 0 0 20px;}
+.list_box li > .group > p {font-size: 20px;}
+.list_box li > .group > span {font-size: 14px;}
+.list_box li > a {float: right; font-size: 18px; margin: 70px 20px 0 0; }
+
 /*<!-- 하단 -->*/
-#footer{}
+#footer{width: 100%;
+        height: 165px;
+        background-color: darksalmon;}
+
+#footer_in{ margin: 0 auto;
+            width: 1200px;
+            height: 165px;
+            background-color: aquamarine;}
