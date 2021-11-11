@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        *{margin: 0; padding: 0;} /*초기값으로 마진/ 패딩만 임시로 설정*/
+        div{width: 150px; height: 150px; border:  1px solid #000;}
+
+        .box1{margin: 50px;}
+        .box1:hover{width: 500px; transition-delay: 2s; transition-duration: 1s;
+                    transform: rotate(360deg); background-color: crimson; cursor: pointer;
+                    transition-timing-function: ease-in-out;}
+        
+        .box2{background-color: darkgoldenrod; cursor: pointer;}
+        .box2 :hover + .box3{
+            transform: translate(500px,0); transition-duration: 2s;
+            transition-timing-function: ease-in;
+        }
+
+        .box3{transition: 1s;}
+
+        /* 자신의 형제이지만 한칸이상 멀리 떨어져 있는 요소를 선택할때는 "~" 사용하여 연결 */
+        .box4:hover ~ .box6{background-color: darkblue;
+                            font-size: 50px;
+                            border: 5px solid #273;
+                            transition-delay: 0s;
+                        transition-duration: 1s;
+                    transition-timing-function: ease-in-out;}
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <br><br><br><br><br><br>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+</html>

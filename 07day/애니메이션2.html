@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+        div{
+            width: 150px; height: 150px;
+            border: 1px solid #000; 
+        }
+
+        .box1{margin: 50px;
+        animation-name : ani01;
+        animation-delay: 2s;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;}
+
+         @keyframes ani01{
+             /* fro{} 시작부분
+             to{} 끝부분 */
+
+             0%{position: absolute; top: 50px; left: 50px;}
+             /* 40%{transform: ;} */
+
+             50%{position: absolute; top: 50px; left: 1000px; transform: rotate(0deg);}
+
+             100%{position: absolute; top: 500px; left: 500px; transform: rotate(360deg);}
+         }
+    </style>
+</head>
+<body>
+    <div class="box01">box1</div>
+    
+</body>
+</html>
