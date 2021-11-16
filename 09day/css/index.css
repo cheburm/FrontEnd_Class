@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#warp{
+    width: 100%;
+}
+#main{
+    width: 100%; height: 680px;
+    background: url(../images/mainslide01.jpg) no-repeat 50% -200px;
+    background-size: 100%;
+}
+#header{ width: 100%; height: 140px;
+            background: rgba(0,0,0,0.5);}
+        #header_in{
+            margin: 0 auto; width: 1300px;
+            height: 140px;
+            background-color: rosybrown;
+}
+.r_box{
+    float: right;
+
+}
+.r_box > .info_mn{
+    background-color: brown;
+    float: left;
+    font-size: 15px;
+}
+.r_box > .info_mn li{
+    float: left;
+}
+
+.r_box > .main_nav{
+    clear: left;
+    font-size: 20px;
+}
+.r_box > .main_nav > ul {
+    
+}
+.r_box > .main_nav li{
+margin: 0 105px 50px 0;
+float: left;
+}
